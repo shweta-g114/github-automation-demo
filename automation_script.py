@@ -3,8 +3,11 @@ import subprocess
 def run_command(command):
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
     print("COMMAND:", command)
-    print("OUTPUT:", result.stdout)
-    print("ERROR:", result.stderr)
+    if result.stdout:
+        print("OUTPUT:", result.stdout)
+    if result.stderr:
+        print("ERROR:", result.stderr)
+    print("command executed successfully")
     print("-" * 50)
 
 # Step 1: Add files
