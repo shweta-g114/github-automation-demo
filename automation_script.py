@@ -14,7 +14,7 @@ def run_command(command):
 run_command("git add .")
 
 # Step 2: Commit
-run_command('git commit -m "Automated commit5"')
+run_command('git commit -m "Automated commit6"')
 
 #step 3: push to the repository
 run_command("git push")
